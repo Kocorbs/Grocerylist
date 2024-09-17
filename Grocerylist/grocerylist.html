@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Grocery List App</h1>
+        <form id="itemForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="text" id="brand" placeholder="Brand">
+            <input type="number" id="price" placeholder="Price">
+            <input type="text" id="weightVolume" placeholder="Weight/Volume">
+            <input type="number" id="quantity" placeholder="Quantity">
+            <input type="text" id="store" placeholder="Store">
+            <select id="category">
+                <option value="produce">Produce</option>
+                <option value="dairy">Dairy</option>
+                <option value="meat">Meat</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button type="submit">Add Item</button>
+        </form>
+        <div id="itemsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
